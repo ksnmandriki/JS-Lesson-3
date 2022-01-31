@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index34</title>
+  </head>
+  <body>
+    <script>
+			function count(){
+				for (let i = 0; i < 3; i++){
+					let j = i * 2;
+				}
+				alert('i='+i); // i=3 на этом значении цикл остановился 
+     		alert('j='+j); // j=4 последнее значение, на котором цикл сработал, было i = 2
+			}
+			count();
+      /* вызываем функцию и получаем  ReferenceError: i is not defined и 
+      ReferenceError: j is not defined т.к. i and j not defined в функции а defined в цикле */
+		</script>
+  </body>
+</html>
